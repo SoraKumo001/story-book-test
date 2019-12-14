@@ -1,0 +1,24 @@
+{
+  "name": "story-book-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-console": "^1.2.1",
+    "@storybook/addon-knobs": "^5.2.8",
+    "@storybook/addon-storysource": "^5.2.8",
+    "@storybook/addon-viewport": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.3"
+  }
+}
