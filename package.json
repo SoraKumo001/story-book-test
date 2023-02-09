@@ -1,0 +1,35 @@
+{
+  "scripts": {
+    "test": "yarn storybook:build && npm-run-all -p -r storybook:start storybook:test",
+    "storybook": "start-storybook -p 9001",
+    "storybook:build": "build-storybook",
+    "storybook:start": "http-server -s -p 9001 storybook-static",
+    "storybook:test": "test-storybook --url http://localhost:9001 --coverage"
+  },
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@node-libraries/scaffold": "^0.0.3",
+    "@storybook/addon-coverage": "^0.0.8",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/test-runner": "^0.9.4",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "sass": "^1.58.0",
+    "storybook-addon-next": "^1.7.1",
+    "typescript": "^4.9.5"
+  },
+  "license": "MIT"
+}
